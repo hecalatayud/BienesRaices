@@ -1,5 +1,12 @@
 html {
+    box-sizing: border-box;
     font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -40,12 +47,19 @@ img {
     font-weight: 300;
 }
 
+.display-block {
+    display: block!important;
+}
+
 .button {
     color: white;
     font-weight: 700;
     text-decoration: none;
     font-size: 1.8rem;
-    padding: 1rem 3rem
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
 }
 
 .button-orange {
@@ -142,4 +156,42 @@ img {
 .price {
     color: #71b100;
     font-weight: 700;
+}
+
+.view-all {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-image {
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-content {
+    flex: 1;
+    color: white;
+}
+
+.contact-content p {
+    font-size: 1.8rem;
+}
+
+.icons-features {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons-features li {
+    display: flex;
+}
+
+.icons-features li img {
+    margin-right: 2rem;
 }
