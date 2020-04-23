@@ -195,3 +195,39 @@ img {
 .icons-features li img {
     margin-right: 2rem;
 }
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-section .blog {
+    flex-basis: 60%;
+}
+
+.bottom-section .token {
+    flex-basis: calc(40% - 2rem)
+}
+
+.blog-post {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.blog-post:last-of-type {
+    margin-bottom: 0;
+}
+
+.blog-post .image {
+    flex-basis: 40%;
+}
+
+.blog-post .blog-text {
+    flex-basis: calc(60% - 3rem)
+}
+
+.blog-text h4 {
+    margin: 0;
+    line-height: 1.4;
+}
