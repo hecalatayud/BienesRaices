@@ -205,7 +205,7 @@ img {
     flex-basis: 60%;
 }
 
-.bottom-section .token {
+.bottom-section .tokens {
     flex-basis: calc(40% - 2rem)
 }
 
@@ -230,4 +230,66 @@ img {
 .blog-text h4 {
     margin: 0;
     line-height: 1.4;
+}
+
+.blog-text a {
+    color: black;
+    text-decoration: none;
+}
+
+.blog-text h4::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: 0.5rem;
+    background-color: #71b100;
+    margin-top: 1rem;
+}
+
+.blog-text span {
+    color: #e08709
+}
+
+.token {
+    background-color: #71b100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    border-radius: 2rem;
+}
+
+.token p {
+    text-align: right;
+}
+
+.token blockquote::before {
+    content: '';
+    background-image: url(../img/comilla.svg);
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.token blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+.site-footer {
+    background-color: #333333;
+    margin-bottom: 0;
+}
+
+.footer-container {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    margin: 0;
+    color: white;
 }
