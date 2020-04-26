@@ -37,6 +37,10 @@ img {
     margin: 0 auto;
 }
 
+label {
+    display: block;
+}
+
 .section {
     margin: 2rem 0
 }
