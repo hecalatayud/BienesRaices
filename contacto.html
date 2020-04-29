@@ -28,7 +28,7 @@
     <img src="/img/destacada3.jpg" alt="Imagen anuncio">
     <main class="container section centered-content">
         <h2 class="fw-300 center-text">Llena el formulario de contacto</h2>
-        <form action="">
+        <form action="" class="contact">
             <fieldset>
                 <legend>Información personal</legend>
                 <label for="name">Nombre:</label>
@@ -54,10 +54,12 @@
             <fieldset>
                 <legend>Contacto</legend>
                 <p>Cómo desea ser contactado:</p>
-                <label for="phone2">Teléfono</label>
-                <input type="radio" name="contact" id="phone2" value="phone">
-                <label for="email2">Email</label>
-                <input type="radio" name="contact" id="email2" value="email">
+                <div class="contact-form">
+                    <label for="phone2">Teléfono</label>
+                    <input type="radio" name="contact" id="phone2" value="phone">
+                    <label for="email2">Email</label>
+                    <input type="radio" name="contact" id="email2" value="email">
+                </div>
                 <p>Si eligió teléfono, elija la fecha y la hora</p>
                 <label for="date">Fecha:</label>
                 <input type="date" id="date">
