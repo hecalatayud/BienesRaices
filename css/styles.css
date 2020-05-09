@@ -96,9 +96,17 @@ textarea {
     font-size: 1.8rem;
     padding: 1rem 3rem;
     margin-top: 3rem;
-    display: inline-block;
+    display: block;
     text-align: center;
     border: none;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
 }
 
 .button:hover {
@@ -127,6 +135,7 @@ textarea {
 }
 
 .container {
+    width: 95%;
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -136,6 +145,13 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .header-content {
+        text-align: left;
+    }
 }
 
 .header-content h1 {
@@ -146,52 +162,97 @@ textarea {
 }
 
 .bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.navigation {
+    display: none;
 }
 
 .navigation a {
     color: white;
     text-decoration: none;
-    font-size: 1.8rem;
-    margin-right: 2rem;
+    font-size: 2.2rem;
+    display: block;
 }
 
-.navigation a:last-of-type {
-    margin: 0;
+.navigation:target {
+    display: block;
+}
+
+.mobile-menu img {
+    width: 5rem;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .navigation a {
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .navigation a:last-of-type {
+        margin: 0;
+    }
 }
 
 .navigation a:hover {
     color: #71b100;
 }
 
-.icons-nosotros {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) {
+    .icons-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .icons {
-    flex-basis: calc(33.3% - 1rem);
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .icons {
+        flex-basis: calc(33.3% - 1rem);
+    }
 }
 
 .icons h3 {
     text-transform: uppercase;
 }
 
-.ad-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+@media (min-width: 768px) {
+    .ad-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 .ad {
-    flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #b5b5b5;
     background-color: #f5f5f5;
     margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .ad {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
 }
 
 .ad-content {
@@ -223,7 +284,6 @@ textarea {
 }
 
 .contact-content {
-    flex: 1;
     color: white;
 }
 
@@ -248,35 +308,44 @@ textarea {
     margin-right: 2rem;
 }
 
-.bottom-section {
-    display: flex;
-    justify-content: space-between;
-}
-
-.bottom-section .blog {
-    flex-basis: 60%;
-}
-
-.bottom-section .tokens {
-    flex-basis: calc(40% - 2rem)
+@media (min-width: 768px) {
+    .bottom-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .bottom-section .blog {
+        flex-basis: 60%;
+    }
+    
+    .bottom-section .tokens {
+        flex-basis: calc(40% - 2rem)
+    }
 }
 
 .blog-post {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .blog-post {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .blog-post:last-of-type {
     margin-bottom: 0;
 }
 
-.blog-post .image {
-    flex-basis: 40%;
-}
-
-.blog-post .blog-text {
-    flex-basis: calc(60% - 3rem)
+@media (min-width: 768px) {
+    .blog-post .image {
+        flex-basis: 40%;
+    }
+    
+    .blog-post .blog-text {
+        flex-basis: calc(60% - 3rem)
+    }
 }
 
 .blog-text h4 {
@@ -335,10 +404,26 @@ textarea {
     margin-bottom: 0;
 }
 
+.site-footer nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
+}
+
 .footer-container {
     padding: 3rem 0;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .copyright {
@@ -346,10 +431,12 @@ textarea {
     color: white;
 }
 
-.nosotros-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+@media (min-width: 768px) {
+    .nosotros-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
 }
 
 .nosotros-text blockquote {
